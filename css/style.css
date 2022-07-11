@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #dfdffe29;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar-brand img {
+    width: 300px;
+    height: 120px;
+}
+
+.nav-item a {
+    color: white;
+    text-transform: uppercase;
+}
+
+.hero-section {
+    background-image: linear-gradient(rgba(171, 167, 167, 0.099), rgba(196, 187, 187, 0.115)), url(../images/sillon-de-barber.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 65vw;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    
+}
+
+.hero-section h1 {
+    font-family: 'Girassol', cursive;
+    justify-content: flex-start;
+    /* color: aliceblue; */
+    /* text-shadow: -2px -3px 6px rgb(38, 38, 37); */
+    color: #faf9f8;
+    text-shadow: 0 2px 0 #41330a,
+        0 4px 0 #41330a,
+        0 6px 0 #41330a,
+        0 8px 0 #41330a,
+        0 10px 0 #41330a,
+        0 12px 0 #41330a;
+    font-size: 95px;
+    padding-top: 240px;
+}
+
+.hero-section img{
+    padding-top: 40px;
+}
+
+.servicios { 
+    /* display: flex; */
+
+}
+.servicios h2{
+    font-family: 'Girassol', cursive;
+    text-align: center;
+    padding-top: 25px;
+}
