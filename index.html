@@ -17,22 +17,20 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <!-- <a class="navbar-brand" href="./index.html"><img src="./images/Logo-imperio.png" alt="Logo"></a> -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <div class="container-fluid nave">
+                <div class="logo">
+                    <a href="">El imperio de barberos</a>
+                </div>
+                <div class="collapse navbar-collapse justify-content-end nav" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" aria-current="page" href="#">Servicios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#servicio">Servicios</a>
+                            <a class="nav-link" href="#servicio">Galeria</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Nuestra hisotria</a>
+                            <a class="nav-link" href="#">Nosotros</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link">Contacto</a>
@@ -44,20 +42,173 @@
     </header>
     <main>
         <section class="hero-section">
-            <h1>Imperio de barberos</h1>
-            <img src="./images/logo-chico.png" alt="imagen">
-        </section>
-        <section id="servicio" class="servicios">
-            <h2>Servicios</h2>
-            
+            <div id="carouselExampleFade" class="carousel slide carousel-fade carroza-hero" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active carroza-item">
+                        <img src="./images/img-barber1.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item carroza-item">
+                        <img src="./images/img-barber2.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item carroza-item">
+                        <img src="./images/img-barber3.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </section>
     </main>
+    <section id="servicio" class="logo-completo">
+        <div>
+            <img src="./images/img-corona.jpeg" alt="">
+        </div>
+    </section>
+    <section class="container historia">
+        <h3>Nuestra Historia</h3>
+        <p>El imperio de Barberos abrió sus puertas al público en 2019.</p>
+        <p>Somos jóvenes emprendedores que apostamos a dar el mejor servicio de peluquería y barbería. Gracias a la
+            confianza y reconocimiento brindado por nuestros clientes, nos encontramos en constante crecimiento.</p>
+        <p>Lo que nos llevó recientemente a mudarnos a nuevas instalaciones</p>
+        <p class="ultimo">La berberia es nuestro imperio, te esperamos para brindarte el mejor servicio</p>
+    </section>
+    <section class="galeria">
+        <div class="text-center my-3">
+            <h2 class="font-weight-light"></h2>
+            <div class="row mx-auto my-auto justify-content-center">
+                <div id="recipeCarousel" class="carousel carreta slide" data-bs-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active carousel-galeria">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./images/img-random-corte.jpeg" class="img-fluid">
+                                    </div>
+                                    <div class="card-img-overlay">Slide 1</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./images/img-random-corte1.jpeg" class="img-fluid">
+                                    </div>
+                                    <div class="card-img-overlay">Slide 2</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./images/img-random-corte2.jpeg" class="img-fluid">
+                                    </div>
+                                    <div class="card-img-overlay">Slide 3</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./images/img-random-corte3.jpeg" class="img-fluid">
+                                    </div>
+                                    <div class="card-img-overlay">Slide 4</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./images/img-random-corte4.jpeg" class="img-fluid">
+                                    </div>
+                                    <div class="card-img-overlay">Slide 5</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./images/img-random-corte5.jpeg" class="img-fluid">
+                                    </div>
+                                    <div class="card-img-overlay">Slide 6</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+            <h5 class="mt-2 fw-light">advances one slide at a time</h5>
+        </div>
+    </section>
+    <section class="container services">
+        <h3>Nuestros Servicios</h3>
+        <div>
+            <div class="desc-services">
+                <p>Nuestros objetivo es asesorarte y encontrar el mejor look para vos.</p>
+                <p>En imperio de Barberos trabajamos mediante cita previa para poder dedicarte el tiempo y la atenión
+                    necesaria.
+                    Podes solicitar tu cita telefónicamente y por nuestra cuenta de instagram.
+                </p>
+                <p class="text-gold">Contamos con una selección de refrescos para hacer mas amena tu espera</p>
+                <button>Reservá tu turno</button>
+            </div>
+            <div class="icon-text">
+                <h3>Corte</h3>
+                <P>Lorem ipsum dolor sit amet.</P>
+                <h3>Barba</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <h3>Venta de productos</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+    </section>
+    <section class="contacto">
+        <div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.253866142568!2d-64.24611418316645!3d-31.43467730304742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a1f9ac16ac57%3A0xe7144e1b526535dc!2sAviador%20Abel%202133%2C%20X5011%20CLC%2C%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1663852688030!5m2!1ses!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="contactanos">
+            <h4>Contactanos!</h4>
+            <h5>Dias y horarios de atencion</h5>
+            <p>Martes a Sabados: 9:30 - 13:00 hs y 16:00 - 20:00 hs</p>
+            <p>Por consultas o reservas de cita no dudes en contactarnos por los siguientes medios</p>
+            <div><img src="" alt="">
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div><img src="" alt="">
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
         integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
         integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
         crossorigin="anonymous"></script>
+    <script src="./javascript/app.js"></script>
 </body>
 
 </html>
