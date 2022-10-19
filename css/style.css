@@ -9,10 +9,9 @@ body {
 }
 
 .navbar {
-    background-color: #000000;
+    background-color: #000000ea;
     position: fixed;
     width: 100%;
-    height: 120px;
     z-index: 2;
 }
 
@@ -36,7 +35,7 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     font-family: Girassol;
-    font-size: 36px;
+    font-size: 33px;
     font-weight: 400;
     line-height: 35px;
     letter-spacing: 0.04em;
@@ -61,16 +60,50 @@ body {
     justify-content: flex-end;
 }
 
+.hero-section {
+    padding-top: 15px;
+}
+
 .carroza-hero {
     padding-top: 120px;
     /* height: 40vw; */
 }
 
+/* .carroza-item{
+    display: flex;
+} */
+
 .carroza-item img {
     height: 790px;
+    
+}
+
+.caption-center{
+    /* border: solid 2px white; */
+    margin-left: 40%;
+    top: 20%;
+}
+
+.caption-center h2{
+    /* justify-content: end; */
+    color: #000000;
+    font-family: Girassol;
+    font-size: 45px;
+    /* padding-right: 50px; */
 
 }
 
+.caption-center button {
+    background-color: #E3AD46;
+    height: 53px;
+    width: 175px;
+    font-size: 20px;
+    font-family: Girassol;
+}
+
+.caption-center button:hover {
+    background-color: #E4D777;
+}
 
 .logo-completo {
     background-color: #000000;
@@ -80,6 +113,91 @@ body {
     padding-top: 100px;
     padding-bottom: 50px;
 }
+
+.logo-completo img {
+    /* border: solid 2px white; */
+    width: 392px;
+    height: 326px;
+    transition: 1s;
+}
+
+.logo-completo img:hover {
+    transform: scale(1.1)
+}
+
+.services {
+    text-align: center;
+    background-color: #000000;
+    color: white;
+    padding-top: 120px;
+    /* margin: 0; */
+}
+
+.services>div {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.services button {
+    background-color: #E3AD46;
+    height: 53px;
+    width: 175px;
+    font-size: 20px;
+    font-family: Girassol;
+    /* padding-top: 25px; */
+}
+
+.services button:hover {
+    background-color: #E4D777;
+}
+
+.desc-services {
+    width: 450px;
+    text-align: left;
+}
+
+.desc-services h3 {
+    font-family: Girassol;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: left;
+}
+
+.desc-services hr {
+    width: 165px ;
+    margin-left: 80px;
+    margin-top: 0px;
+    background-color: #E3AD46;
+    height: 5px;
+    border: none;
+} 
+
+.desc-services p {
+    font-size: 22px;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+
+.text-gold {
+    color: #E3AD46;
+}
+
+.icon-text{
+    display: flex;
+    text-align: left;
+}
+
+.iconos {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
 
 
 .bordeado {
@@ -104,57 +222,59 @@ body {
     background-color: #000000;
     color: white;
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
+    padding-top: 70px;
 }
 
 .historia .ultimo {
-    padding-bottom: 20px;
+    color: #E3AD46;
 }
 
 
 .galeria {
     background-color: #000000;
+    margin-top: 90px;
 }
 
 /* Carrousel en galeria */
 @media (max-width: 767px) {
-    .carousel-inner .carousel-item>div {
+    #recipeCarousel .carousel-inner .carousel-item>div {
         display: none;
     }
 
-    .carousel-inner .carousel-item>div:first-child {
+    #recipeCarousel .carousel-inner .carousel-item>div:first-child {
         display: block;
     }
 }
 
-.carousel-inner .carousel-item.active,
-.carousel-inner .carousel-item-next,
-.carousel-inner .carousel-item-prev {
+#recipeCarousel .carousel-inner .carousel-item.active,
+#recipeCarousel .carousel-inner .carousel-item-next,
+#recipeCarousel .carousel-inner .carousel-item-prev {
     display: flex;
 }
 
 /* medium and up screens */
 @media (min-width: 768px) {
 
-    .carousel-inner .carousel-item-end.active,
-    .carousel-inner .carousel-item-next {
+    #recipeCarousel .carousel-inner .carousel-item-end.active,
+    #recipeCarousel .carousel-inner .carousel-item-next {
         transform: translateX(25%);
     }
 
-    .carousel-inner .carousel-item-start.active,
-    .carousel-inner .carousel-item-prev {
+    #recipeCarousel .carousel-inner .carousel-item-start.active,
+    #recipeCarousel .carousel-inner .carousel-item-prev {
         transform: translateX(-25%);
     }
 }
 
-.carousel-inner .carousel-item-end,
-.carousel-inner .carousel-item-start {
+#recipeCarousel .carousel-inner .carousel-item-end,
+#recipeCarousel .carousel-inner .carousel-item-start {
     transform: translateX(0);
 }
 
 /*  --------------------- */
 .carreta {
-    margin-top: 25px;
+    padding-top: 25px;
 }
 
 .carousel-galeria {
@@ -162,7 +282,6 @@ body {
     width: 100%;
 
 }
-
 
 .card {
     /* border: solid 3px white; */
@@ -177,48 +296,41 @@ body {
     border-radius: 5px;
 }
 
-.services {
-    text-align: center;
+.gold-bar {
+    background-color:#E3AD46;
+    height: 130px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 340px;
+}
+
+.bar-button {
     background-color: #000000;
     color: white;
-    /* margin: 0; */
-}
-
-.services > div {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
-.services button {
-    background-color: #E4D777;
-    height: 43px;
-    width: 166px;
+    height: 54px;
+    width: 176px;
     font-size: 20px;
-    font-family: Girassol;
-    margin-top: 25px;
+    font-family: Roboto;
 }
 
-.desc-services {
-    width: 450px;
-    text-align: left;
+.bar-button:hover {
+    background-color: #E4D777;
+    color: #000000;
 }
 
-.text-gold {
-    color: #E4D777;
+.salt-pagina {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 110px;
 }
-
-.icon-text{
-    text-align: left;
-}
-
 .contacto {
     background-color: #000000;
     color: white;
     display: flex;
     justify-content: space-around;
-    padding-top: 50px;
+    padding-top: 130px;
     padding-bottom: 50px;
 }
 
